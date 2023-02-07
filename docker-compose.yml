@@ -9,6 +9,6 @@ services:
       - NODE_ENV=development
     volumes:
     - ./:/usr/src/app
-    command: sh -c "cd reactapp && npm start"
+    command: sh -c "cd reactapp && npm install && npm start"
     ports:
       - "3000:3000"
